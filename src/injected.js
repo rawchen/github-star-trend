@@ -9,7 +9,12 @@ const trendSvg = `<svg style="width: 16px;vertical-align: middle;fill: currentCo
  */
 function onClickStarTrend() {
   chart.show();
-  fetchHistoryData(location.href).then(data => {
+  var webUrl = location.href;
+  if(webUrl.indexOf("?") != -1) {
+    //有参数，去掉
+    webUrl = webUrl.substring(0, webUrl.indexOf('?'));
+  }
+  fetchHistoryData(webUrl).then(data => {
     chart.ready(data);
   }).catch(err => {
     chart.fail(err);
