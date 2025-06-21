@@ -110,7 +110,7 @@ const errorInfoNode = (errorInfo) => `
 // 设置Access Token节点
 const accessTokenNode = `
 <div style="max-width: 620px; padding: 15px; border-radius: 6px; background-color: #FFF;">
-  <p style="font-size: 18px; color: #333; margin: 0;">当前已达<a href="https://developer.github.com/v3/#rate-limiting">Github API访问频次上限</a>，设置<a href="https://github.com/settings/tokens">AccessToken</a>可突破限制</p>
+  <p style="font-size: 18px; color: #333; margin: 0;">当前已达<a href="https://docs.github.com/zh/rest/using-the-rest-api/rate-limits-for-the-rest-api">Github API访问频次上限</a>，设置<a href="https://github.com/settings/personal-access-tokens">AccessToken</a>可突破限制</p>
   <div style="display: flex; margin-top: 15px;">
     <input id="access-token-input" placeholder="Github Access Token" type="text" value="" style="display: flex; flex-grow: 1; height: 40px; margin: 0; padding: 6px 11px; font-size: 16px; border: 1px solid #d9d9d9; border-right-width: 0; border-radius: 4px; border-top-right-radius: 0; border-bottom-right-radius: 0;">
     <button id="set-access-token-btn" type="button" style="height: 40px; padding: 0 15px; font-size: 16px; border-radius: 4px; border-top-left-radius: 0; border-bottom-left-radius: 0; outline: 0; color: #fff; background-color: #1890ff;">保存</button>
